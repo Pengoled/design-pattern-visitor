@@ -1,8 +1,10 @@
-import items.Liquor;
-import items.Necessity;
-import items.Tobacco;
-import visitors.TaxHolidayVisitor;
-import visitors.TaxVisitor;
+package tax;
+
+import tax.items.Liquor;
+import tax.items.Necessity;
+import tax.items.Tobacco;
+import tax.visitors.TaxHolidayVisitor;
+import tax.visitors.TaxVisitor;
 
 public class VisitorTest {
 

@@ -1,26 +1,26 @@
-package visitors;
+package tax.visitors;
 
-import interfaces.Visitor;
-import items.Liquor;
-import items.Necessity;
-import items.Tobacco;
+import tax.interfaces.Visitor;
+import tax.items.Liquor;
+import tax.items.Necessity;
+import tax.items.Tobacco;
 
 import java.text.DecimalFormat;
 
-public class TaxVisitor implements Visitor {
+public class TaxHolidayVisitor implements Visitor {
 
-    DecimalFormat df = new DecimalFormat("##.##");
+    DecimalFormat df = new DecimalFormat("#.##");
 
     @Override
     public double visit(Liquor liquorItem) {
         System.out.print("Liquor item: Price with Tax: ");
-        return Double.parseDouble(df.format((liquorItem.getPrice() * .18) + liquorItem.getPrice()));
+        return Double.parseDouble(df.format((liquorItem.getPrice() * .10) + liquorItem.getPrice()));
     }
 
     @Override
     public double visit(Tobacco tobaccoItem) {
         System.out.print("Tobacco item: Price with Tax: ");
-        return Double.parseDouble(df.format((tobaccoItem.getPrice() * .32) + tobaccoItem.getPrice()));
+        return Double.parseDouble(df.format((tobaccoItem.getPrice() * .30) + tobaccoItem.getPrice()));
     }
 
     @Override

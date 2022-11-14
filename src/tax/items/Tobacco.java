@@ -1,13 +1,13 @@
-package items;
+package tax.items;
 
-import interfaces.Visitable;
-import interfaces.Visitor;
+import tax.interfaces.Visitable;
+import tax.interfaces.Visitor;
 
-public class Necessity implements Visitable {
+public class Tobacco implements Visitable {
 
     private double price;
 
-    public Necessity(double price) {
+    public Tobacco(double price) {
         this.price = price;
     }
 

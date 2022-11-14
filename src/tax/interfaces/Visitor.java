@@ -1,8 +1,8 @@
-package interfaces;
+package tax.interfaces;
 
-import items.Liquor;
-import items.Necessity;
-import items.Tobacco;
+import tax.items.Liquor;
+import tax.items.Necessity;
+import tax.items.Tobacco;
 
 public interface Visitor {
 

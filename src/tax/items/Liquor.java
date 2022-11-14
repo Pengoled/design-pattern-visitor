@@ -1,7 +1,7 @@
-package items;
+package tax.items;
 
-import interfaces.Visitable;
-import interfaces.Visitor;
+import tax.interfaces.Visitable;
+import tax.interfaces.Visitor;
 
 public class Liquor implements Visitable {
 

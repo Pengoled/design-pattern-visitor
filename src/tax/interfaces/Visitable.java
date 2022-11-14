@@ -1,4 +1,4 @@
-package interfaces;
+package tax.interfaces;
 
 public interface Visitable {
 
